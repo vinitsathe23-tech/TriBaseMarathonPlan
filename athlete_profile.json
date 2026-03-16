@@ -1,0 +1,82 @@
+{
+  "athlete": {
+    "name": "Vinit Sathe",
+    "date_of_birth": "1995-07-23",
+    "nationality": "Indian",
+    "location": "Canberra, Australia",
+    "profession": "Software Engineer"
+  },
+  "goals": {
+    "primary_focus": "full_marathon",
+    "secondary_focus": "maintain_triathlon_fitness",
+    "weeks_to_goal": 15
+  },
+  "plan": {
+    "default_start_day": "Monday"
+  },
+  "running": {
+    "weekly_km": 36,
+    "runs_per_week": 4,
+    "recent_long_run_km": 14,
+    "next_long_run_target_km": 16,
+    "threshold_hr_bpm": 185,
+    "threshold_pace_min_per_km": {
+      "from": "5:10",
+      "to": "5:20"
+    },
+    "heart_rate_zones": {
+      "z1": "<145",
+      "z2": "145-160",
+      "z3": "160-172",
+      "z4": "173-185",
+      "z5": ">185"
+    },
+    "cycling_heart_rate_zones": {
+      "z1": "<141",
+      "z2": "141-154",
+      "z3": "155-163",
+      "z4": "164-174",
+      "z5": ">174"
+    }
+  },
+  "cycling": {
+    "threshold_hr_bpm": 174,
+    "power_zones": {
+      "z1": "0.0-0.55",
+      "z2": "0.56-0.74",
+      "z3": "0.75-0.91",
+      "z4": "0.92-1.05",
+      "z5": "1.06-1.20",
+      "z6": "1.22-1.51",
+      "z7": "1.52-20.20"
+    }
+  },
+  "preferences": {
+    "swim_days": [
+      "Monday",
+      "Friday"
+    ],
+    "swim_pool_length_m": 25,
+    "swap_brick_run_for_swim_on_even_build_weeks": true,
+    "long_run_days": [
+      "Sunday",
+      "Saturday"
+    ],
+    "long_ride_days": [
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  "training_philosophy": [
+    "Gradually increase long run distance",
+    "Keep most running aerobic in Z2",
+    "Include one threshold workout per week",
+    "Maintain swim and bike base for triathlon",
+    "Prioritize consistency and injury prevention"
+  ],
+  "platforms": [
+    "Garmin",
+    "Zwift",
+    "Intervals.icu"
+  ]
+}

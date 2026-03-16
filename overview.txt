@@ -1,0 +1,137 @@
+Athlete Context Snapshot
+Athlete
+
+Name: Vinit Sathe
+DOB: 23 July 1995
+Nationality: Indian
+Location: Canberra, Australia
+
+Profession: Software Engineer working mostly from home.
+
+Endurance Background
+
+The athlete is a recreational endurance athlete currently focused on running and triathlon preparation.
+
+Background characteristics:
+
+Runs consistently several times per week
+
+Interested in structured endurance training
+
+Enjoys data-driven training and automation
+
+Uses scripting and tools to generate workouts
+
+The athlete is currently building toward a full marathon over ~15 weeks while maintaining triathlon fitness.
+
+Current Fitness Metrics
+
+Lactate Threshold
+
+Threshold HR: 185 bpm
+
+Threshold pace: ~5:10–5:20 /km
+
+Running volume
+
+Weekly volume: ~35–36 km
+
+Recent long run: 14 km
+
+Progressing toward 16 km
+
+Running Heart Rate Zones
+
+Z1
+<145 bpm
+
+Z2
+145–160 bpm
+
+Z3
+160–172 bpm
+
+Z4
+173–185 bpm
+
+Z5
+
+185 bpm
+
+Weekly Training Structure
+
+Typical week:
+swim preference monday / friday
+long run preference sunday / sat
+l;ong rid sunday/sat
+
+Running frequency: 4 runs per week
+
+Training Philosophy
+
+Primary principles:
+
+Gradually increase long run distance
+
+Keep most running aerobic (Z2)
+
+Include one threshold workout per week
+
+Maintain swim and bike base for triathlon
+
+Prioritize consistency and injury prevention
+
+Current Training Phase
+
+Base → Marathon Build
+
+Approximate timeline:
+
+~15 weeks until target marathon
+
+Key priorities:
+
+Build aerobic endurance
+
+Increase long-run tolerance
+
+Maintain triathlon base fitness
+
+Avoid overtraining
+
+Tools & Training Ecosystem
+Devices
+
+Garmin watch
+
+Zwift (cycling)
+
+Platforms
+
+Intervals.icu – planning and analytics
+
+The athlete built a Python-based workout generator.
+
+Outputs supported:
+
+.json
+
+.zwo (Zwift workouts)
+
+.fit (Garmin structured workouts)
+
+
+
+Short-Term Goals
+
+Generate weekly structured training plans
+
+Automatically export workouts compatible with:
+
+Garmin
+
+Zwift
+
+Intervals.icu
+
+Keep swim/bike/run planning unified through the Python generator.
