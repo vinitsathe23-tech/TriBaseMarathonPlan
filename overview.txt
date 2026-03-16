@@ -1,9 +1,8 @@
 Athlete Context Snapshot
 Athlete
 
-Name: Vinit Sathe
-DOB: 23 July 1995
-Nationality: Indian
+Name: Monkey D luffy
+DOB: 1995-08-16
 Location: Canberra, Australia
 
 Profession: Software Engineer working mostly from home.

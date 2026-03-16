@@ -1,10 +1,8 @@
 {
   "athlete": {
-    "name": "Vinit Sathe",
-    "date_of_birth": "1995-07-23",
-    "nationality": "Indian",
-    "location": "Canberra, Australia",
-    "profession": "Software Engineer"
+    "name": "Monkey D luffy",
+    "date_of_birth": "1995-08-16",
+    "location": "Canberra, Australia"
   },
   "goals": {
     "primary_focus": "full_marathon",
