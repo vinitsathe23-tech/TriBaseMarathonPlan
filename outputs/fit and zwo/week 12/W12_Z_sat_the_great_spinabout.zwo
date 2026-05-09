@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+  <author>Codex</author>
+  <name>W12_Z_sat_the_great_spinabout</name>
+  <description>Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.</description>
+  <sportType>bike</sportType>
+  <workout>
+    <SteadyState Duration="6300" Power="0.65" />
+  </workout>
+</workout_file>

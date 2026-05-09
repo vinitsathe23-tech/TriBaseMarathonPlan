@@ -1,0 +1,23 @@
+W01_Fri_pool_party_cruise
+Date: 2026-03-30
+Sport: Swimming
+Pool length: 25m
+Total distance: 0.90 km
+
+Warmup
+- Warmup 0.20 km
+
+4x
+- Drill 0.05 km
+- 20s intensity=rest
+
+4x
+- Kick 0.05 km
+- 20s intensity=rest
+
+4x
+- Pull 0.05 km
+- 20s intensity=rest
+
+Cooldown
+- Swim 0.10 km

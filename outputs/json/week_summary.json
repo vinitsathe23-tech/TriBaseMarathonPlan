@@ -1,0 +1,78 @@
+{
+  "week8": {
+    "phase": "recovery",
+    "start_date": "2026-05-14",
+    "end_date": "2026-05-20",
+    "run_weekly_target_km": 48,
+    "long_run_target_km": 28,
+    "rest_day": "Monday",
+    "brick_day": "none",
+    "has_brick": false,
+    "notes": [
+      "Recovery week to consolidate the previous block."
+    ],
+    "sessions": [
+      {
+        "day": "Thursday",
+        "sport": "run",
+        "title": "W08_Thu_cry_later_run_now",
+        "description": "2 x 15 min threshold blocks to build sustained aerobic power.",
+        "target_summary": "HR 145-160, HR 173-185",
+        "generated_summary": [
+          "- Easy jog warm-up in Z2 15m Z2",
+          "- Long threshold block 1 at 5.15-5.05 /km 15m Z4",
+          "- Easy jog recovery 4m Z2",
+          "- Long threshold block 2 at 5.15-5.05 /km 15m Z4",
+          "- Easy cool-down jog 10m Z2"
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "sport": "run",
+        "title": "W08_Tue_move_your_feet",
+        "description": "12 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+        "target_summary": "HR 145-160, HR 160-172",
+        "generated_summary": [
+          "- Steady aerobic running 12km 77m Z2",
+          "- Stride 1 of 4 0m Z3",
+          "- Walk or easy jog recovery 1m Z2",
+          "- Stride 2 of 4 0m Z3",
+          "- Walk or easy jog recovery 1m Z2",
+          "- Stride 3 of 4 0m Z3",
+          "- Walk or easy jog recovery 1m Z2",
+          "- Stride 4 of 4 0m Z3"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "sport": "bike",
+        "title": "W08_Wed_the_steady_spinner",
+        "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+        "target_summary": "Z2 56-74% FTP",
+        "generated_summary": [
+          "- Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building. 60m Z2"
+        ]
+      },
+      {
+        "day": "Saturday",
+        "sport": "bike",
+        "title": "W08_Sat_saddle_up_supreme",
+        "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+        "target_summary": "Z2 56-74% FTP",
+        "generated_summary": [
+          "- Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building. 105m Z2"
+        ]
+      },
+      {
+        "day": "Sunday",
+        "sport": "run",
+        "title": "W08_Sun_epic_of_endurance",
+        "description": "28 km easy-long run. Keep it mostly aerobic and controlled.",
+        "target_summary": "HR 145-160",
+        "generated_summary": [
+          "- Long aerobic run 28km 182m Z2"
+        ]
+      }
+    ]
+  }
+}
