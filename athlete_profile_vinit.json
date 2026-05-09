@@ -1,7 +1,7 @@
 {
   "athlete": {
-    "name": "Vicky",
-    "date_of_birth": "1992-0-13",
+    "name": "Monkey D luffy",
+    "date_of_birth": "1995-08-16",
     "location": "Canberra, Australia"
   },
   "goals": {
@@ -17,10 +17,10 @@
     "runs_per_week": 3,
     "recent_long_run_km": 26,
     "next_long_run_target_km": 28,
-    "threshold_hr_bpm": 197,
+    "threshold_hr_bpm": 185,
     "threshold_pace_min_per_km": {
-      "from": "5.15",
-      "to": "5.05"
+      "from": "5:10",
+      "to": "5:20"
     },
     "preferred_threshold_session": {
       "repeats": 4,
@@ -76,12 +76,6 @@
     "easy_run_days": [
       "Tuesday"
     ],
-    "easy_run_finish_strides": {
-      "enabled": true,
-      "repeats": 4,
-      "stride_seconds": 20,
-      "recovery_seconds": 40
-    },
     "swim_pool_length_m": 25,
     "swap_brick_run_for_swim_on_even_build_weeks": true,
     "long_run_days": [
@@ -92,12 +86,9 @@
       "Wednesday",
       "Saturday"
     ],
-    "max_easy_run_km_by_day": {
-      "Thursday": 10
-    },
     "long_ride_days": [
       "Saturday",
-      "Sunday"
+      "Wednesday"
     ]
   },
   "training_philosophy": [

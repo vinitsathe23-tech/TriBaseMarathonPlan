@@ -81,6 +81,8 @@ def resolve_start_date(raw_start_date: str | None) -> date:
 def phase_for_week(week_number: int, total_weeks: int) -> str:
     if week_number >= total_weeks - 1:
         return "taper"
+    if week_number == 9:
+        return "recovery"
     if week_number % 4 == 0:
         return "recovery"
     return "build"
@@ -92,7 +94,7 @@ def build_week_targets(profile: dict[str, Any]) -> list[WeekTargets]:
 
     weekly_km = current_weekly_km
     build_targets: list[WeekTargets] = []
-    long_run_sequence = [16, 18, 20, 18, 22, 24, 26, 22, 24, 26, 28, 24, 32, 24, 16]
+    long_run_sequence = [16, 18, 20, 18, 22, 24, 26, 28, 22, 26, 28, 24, 32, 24, 16]
 
     for week_number in range(1, total_weeks + 1):
         phase = phase_for_week(week_number, total_weeks)
@@ -425,10 +427,11 @@ def workout_title(week_number: int, day: str, label: str, sport: str) -> str:
     return f"{week_label}_{day_label}_{funny}"
 
 
-def build_run_threshold(profile: dict[str, Any], targets: WeekTargets) -> dict[str, Any]:
+def build_run_threshold(profile: dict[str, Any], targets: WeekTargets, day: str = "Tuesday") -> dict[str, Any]:
     z2_low, z2_high = hr_zone_range(profile, "z2", "heart_rate_zones")
     z4_low, z4_high = hr_zone_range(profile, "z4", "heart_rate_zones")
     pace_range = profile["running"]["threshold_pace_min_per_km"]
+    preferred_threshold = profile["running"].get("preferred_threshold_session", {})
 
     workout_variant = targets.week_number % 4
     segments = [
@@ -487,15 +490,45 @@ def build_run_threshold(profile: dict[str, Any], targets: WeekTargets) -> dict[s
                 )
         workout_description = "4 x 6 min cruise intervals at threshold with short float recoveries."
     elif workout_variant == 3:
-        segments.append(
-            {
-                "type": "work",
-                "duration_sec": 20 * 60,
-                "target": {"metric": "heart_rate", "low": z4_low, "high": z4_high},
-                "description": f"20 min continuous tempo at {pace_range['from']}-{pace_range['to']} /km",
-            }
-        )
-        workout_description = "Continuous threshold tempo to build sustained marathon strength."
+        preferred_repeats = int(preferred_threshold.get("repeats", 0))
+        preferred_minutes = int(preferred_threshold.get("minutes", 0))
+        preferred_recovery = int(preferred_threshold.get("recovery_minutes", 3))
+        if preferred_repeats > 0 and preferred_minutes > 0:
+            for repeat_index in range(preferred_repeats):
+                segments.append(
+                    {
+                        "type": "work",
+                        "duration_sec": preferred_minutes * 60,
+                        "target": {"metric": "heart_rate", "low": z4_low, "high": z4_high},
+                        "description": (
+                            f"Tempo repeat {repeat_index + 1} at "
+                            f"{pace_range['from']}-{pace_range['to']} /km"
+                        ),
+                    }
+                )
+                if repeat_index < preferred_repeats - 1:
+                    segments.append(
+                        {
+                            "type": "recovery",
+                            "duration_sec": preferred_recovery * 60,
+                            "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
+                            "description": "Easy jog recovery",
+                        }
+                    )
+            workout_description = (
+                f"{preferred_repeats} x {preferred_minutes} min tempo at threshold with "
+                f"{preferred_recovery} min easy jog recoveries."
+            )
+        else:
+            segments.append(
+                {
+                    "type": "work",
+                    "duration_sec": 20 * 60,
+                    "target": {"metric": "heart_rate", "low": z4_low, "high": z4_high},
+                    "description": f"20 min continuous tempo at {pace_range['from']}-{pace_range['to']} /km",
+                }
+            )
+            workout_description = "Continuous threshold tempo to build sustained marathon strength."
     else:
         for repeat_index in range(2):
             segments.append(
@@ -527,9 +560,9 @@ def build_run_threshold(profile: dict[str, Any], targets: WeekTargets) -> dict[s
     )
 
     return make_workout(
-        day="Tuesday",
+        day=day,
         sport="run",
-        title=workout_title(targets.week_number, "Tuesday", "Threshold Run", "run"),
+        title=workout_title(targets.week_number, day, "Threshold Run", "run"),
         description=workout_description,
         export_formats=["fit"],
         segments=segments,
@@ -540,85 +573,53 @@ def build_run_threshold(profile: dict[str, Any], targets: WeekTargets) -> dict[s
 def build_easy_run(profile: dict[str, Any], day: str, title: str, km: int) -> dict[str, Any]:
     z2_low, z2_high = hr_zone_range(profile, "z2", "heart_rate_zones")
     z3_low, z3_high = hr_zone_range(profile, "z3", "heart_rate_zones")
+    max_easy_run_km_by_day = profile.get("preferences", {}).get("max_easy_run_km_by_day", {})
+    finish_strides = profile.get("preferences", {}).get("easy_run_finish_strides", {})
+    capped_km = int(max_easy_run_km_by_day.get(day, km))
+    km = min(km, capped_km)
     duration_minutes = round(km * 6.4)
-    week_number = int(title.split()[1])
     is_thursday = day == "Thursday"
-    variant = week_number % 4 if is_thursday else 0
+    strides_enabled = bool(finish_strides.get("enabled", False))
+    stride_repeats = int(finish_strides.get("repeats", 4))
+    stride_seconds = int(finish_strides.get("stride_seconds", 20))
+    recovery_seconds = int(finish_strides.get("recovery_seconds", 40))
 
-    if is_thursday and variant == 1:
-        segments = [
-            {
-                "type": "steady",
-                "duration_sec": duration_minutes * 60,
-                "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
-                "description": f"Steady aerobic running {km}km",
-            }
-        ]
-        description = f"{km} km relaxed aerobic running in Z2."
-    elif is_thursday and variant == 2:
-        easy_km = max(km - 3, 8)
-        steady_km = km - easy_km
-        segments = [
-            {
-                "type": "steady",
-                "duration_sec": round(easy_km * 6.4) * 60,
-                "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
-                "description": f"Easy aerobic running {easy_km}km",
-            },
-            {
-                "type": "steady",
-                "duration_sec": round(steady_km * 6.0) * 60,
-                "target": {"metric": "heart_rate", "low": z3_low, "high": z3_high},
-                "description": f"Steady finish {steady_km}km",
-            },
-        ]
-        description = f"{km} km steady-state aerobic run with a stronger finish."
-    elif is_thursday and variant == 3:
-        first_km = max(km - 4, 8)
-        finish_km = km - first_km
-        segments = [
-            {
-                "type": "steady",
-                "duration_sec": round(first_km * 6.4) * 60,
-                "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
-                "description": f"Easy aerobic running {first_km}km",
-            },
-            {
-                "type": "steady",
-                "duration_sec": round(finish_km * 5.8) * 60,
-                "target": {"metric": "heart_rate", "low": z3_low, "high": z3_high},
-                "description": f"Progression finish {finish_km}km",
-            },
-        ]
-        description = f"{km} km progression run finishing controlled and strong."
-    elif is_thursday and variant == 0 and km >= 10:
-        first_km = max(km - 3, 7)
-        mp_km = km - first_km
-        segments = [
-            {
-                "type": "steady",
-                "duration_sec": round(first_km * 6.4) * 60,
-                "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
-                "description": f"Easy aerobic running {first_km}km",
-            },
-            {
-                "type": "steady",
-                "duration_sec": round(mp_km * 5.75) * 60,
-                "target": {"metric": "heart_rate", "low": z3_low, "high": z3_high},
-                "description": f"Marathon pace finish {mp_km}km",
-            },
-        ]
-        description = f"{km} km aerobic run with a short marathon-pace finish."
+    segments = [
+        {
+            "type": "steady",
+            "duration_sec": duration_minutes * 60,
+            "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
+            "description": f"Steady aerobic running {km}km",
+        }
+    ]
+
+    if strides_enabled:
+        for stride_index in range(stride_repeats):
+            segments.append(
+                {
+                    "type": "stride",
+                    "duration_sec": stride_seconds,
+                    "target": {"metric": "heart_rate", "low": z3_low, "high": z3_high},
+                    "description": f"Stride {stride_index + 1} of {stride_repeats}",
+                }
+            )
+            if stride_index < stride_repeats - 1:
+                segments.append(
+                    {
+                        "type": "recovery",
+                        "duration_sec": recovery_seconds,
+                        "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
+                        "description": "Walk or easy jog recovery",
+                    }
+                )
+
+    if is_thursday:
+        description = f"{km} km relaxed aerobic running in Z2 to support base building and reduce injury risk."
     else:
-        segments = [
-            {
-                "type": "steady",
-                "duration_sec": duration_minutes * 60,
-                "target": {"metric": "heart_rate", "low": z2_low, "high": z2_high},
-                "description": f"Steady aerobic running {km}km",
-            }
-        ]
         description = f"{km} km relaxed aerobic running in Z2."
+
+    if strides_enabled:
+        description = f"{description} Finish with {stride_repeats} x {stride_seconds} sec strides."
 
     return make_workout(
         day=day,
@@ -642,6 +643,9 @@ def build_easy_run(profile: dict[str, Any], day: str, title: str, km: int) -> di
         notes=[
             f"Planned distance is {km} km.",
             "FIT export currently uses estimated duration rather than a distance target for this run.",
+            f"Finish with {stride_repeats} x {stride_seconds} sec strides with {recovery_seconds} sec easy recovery."
+            if strides_enabled
+            else "No finish strides scheduled.",
         ],
     )
 
@@ -709,10 +713,67 @@ def build_long_run(profile: dict[str, Any], targets: WeekTargets, day: str) -> d
     )
 
 
-def build_swim(day: str, title: str, distance_m: int, description: str) -> dict[str, Any]:
-    del distance_m
+def round_to_pool_length(distance_m: int, pool_length_m: int) -> int:
+    return max(pool_length_m, round(distance_m / pool_length_m) * pool_length_m)
+
+
+def scale_swim_segments(segments: list[dict[str, Any]], target_distance_m: int, pool_length_m: int) -> list[dict[str, Any]]:
+    scaled_segments = deepcopy(segments)
+    distance_indexes = [index for index, segment in enumerate(scaled_segments) if "distance_m" in segment]
+    current_distance_m = sum(int(scaled_segments[index]["distance_m"]) for index in distance_indexes)
+
+    if not distance_indexes or current_distance_m <= 0:
+        return scaled_segments
+
+    scale_factor = target_distance_m / current_distance_m
+    accumulated_distance_m = 0
+
+    for index in distance_indexes[:-1]:
+        original_distance_m = int(scaled_segments[index]["distance_m"])
+        scaled_distance_m = round_to_pool_length(int(round(original_distance_m * scale_factor)), pool_length_m)
+        scaled_segments[index]["distance_m"] = scaled_distance_m
+        accumulated_distance_m += scaled_distance_m
+
+    last_index = distance_indexes[-1]
+    remaining_distance_m = max(pool_length_m, target_distance_m - accumulated_distance_m)
+    scaled_segments[last_index]["distance_m"] = round_to_pool_length(remaining_distance_m, pool_length_m)
+    return scaled_segments
+
+
+def target_swim_distance(profile: dict[str, Any], targets: WeekTargets, session_type: str) -> int:
+    swimming = profile.get("swimming", {})
+    preferences = profile.get("preferences", {})
+    pool_length_m = int(preferences.get("swim_pool_length_m", 25))
+    current_weekly_m = int(swimming.get("current_weekly_m", 1000))
+    weekly_build_increment_m = int(swimming.get("weekly_build_increment_m", 100))
+    target_weekly_m = int(swimming.get("target_weekly_m", current_weekly_m))
+
+    build_progress_m = max(0, (targets.week_number - 1) * weekly_build_increment_m)
+    planned_weekly_m = min(current_weekly_m + build_progress_m, target_weekly_m)
+
+    if targets.phase == "recovery":
+        planned_weekly_m = max(current_weekly_m, planned_weekly_m - weekly_build_increment_m)
+    elif targets.phase == "taper":
+        planned_weekly_m = max(current_weekly_m, round(planned_weekly_m * 0.8))
+    elif targets.phase == "race":
+        planned_weekly_m = current_weekly_m
+
+    if session_type == "technique":
+        distance_m = round(planned_weekly_m * 0.4)
+    elif session_type == "optional":
+        distance_m = round(planned_weekly_m * 0.35)
+    else:
+        distance_m = round(planned_weekly_m * 0.6)
+
+    return round_to_pool_length(distance_m, pool_length_m)
+
+
+def build_swim(profile: dict[str, Any], targets: WeekTargets, day: str, title: str, description: str) -> dict[str, Any]:
     week_number = int(title.split()[1])
     session_type = "steady" if "Steady Swim" in title or "Optional Swim" in title else "technique"
+    if "Optional Swim" in title:
+        session_type = "optional"
+    pool_length_m = int(profile.get("preferences", {}).get("swim_pool_length_m", 25))
 
     def repeat_block(set_name: str, stroke: str, reps: int, rep_distance: int, rest_sec: int) -> list[dict[str, Any]]:
         block = []
@@ -789,6 +850,9 @@ def build_swim(day: str, title: str, distance_m: int, description: str) -> dict[
         templates = steady_templates if session_type == "steady" else technique_templates
         segments = templates[(week_number - 1) % len(templates)]
 
+    distance_m = target_swim_distance(profile, targets, session_type)
+    segments = scale_swim_segments(segments, distance_m, pool_length_m)
+
     return make_workout(
         day=day,
         sport="swim",
@@ -798,7 +862,7 @@ def build_swim(day: str, title: str, distance_m: int, description: str) -> dict[
             "Technique Swim" if "Technique Swim" in title else "Steady Swim" if "Steady Swim" in title else "Optional Swim",
             "swim",
         ),
-        description=description,
+        description=f"{distance_m} m planned. {description}",
         export_formats=["txt"],
         segments=segments,
         tags=["swim", "maintenance"],
@@ -812,9 +876,21 @@ def build_bike(
     z3_low, z3_high = power_zone_range(profile, "z3")
     week_number = int(title.split()[1])
     is_wednesday = day == "Wednesday"
+    easy_bike_days = set(profile.get("preferences", {}).get("easy_bike_days", []))
+    keep_easy_for_base = day in easy_bike_days
     variant = week_number % 4 if is_wednesday else 1
 
-    if is_wednesday and variant == 1:
+    if keep_easy_for_base:
+        segments = [
+            {
+                "type": "freeride",
+                "duration_sec": minutes * 60,
+                "target": {"metric": "power_zone", "zone": "z2", "low": z2_low, "high": z2_high},
+                "description": f"{description} Keep the whole ride aerobic for base building.",
+            }
+        ]
+        session_description = f"{description} Keep the whole ride easy and aerobic for base building."
+    elif is_wednesday and variant == 1:
         segments = [
             {
                 "type": "freeride",
@@ -917,8 +993,9 @@ def allocate_run_distances(targets: WeekTargets) -> tuple[int, int]:
     return 6, 14
 
 
-def has_brick_run(targets: WeekTargets) -> bool:
-    return targets.phase == "build" and targets.week_number % 2 == 1
+def has_brick_run(profile: dict[str, Any], targets: WeekTargets) -> bool:
+    planned_runs_per_week = int(profile.get("running", {}).get("runs_per_week", 4))
+    return planned_runs_per_week >= 4 and targets.phase == "build" and targets.week_number % 2 == 1
 
 
 def should_swap_brick_for_swim(profile: dict[str, Any], targets: WeekTargets) -> bool:
@@ -929,15 +1006,28 @@ def should_swap_brick_for_swim(profile: dict[str, Any], targets: WeekTargets) ->
     )
 
 
+def swim_is_active(profile: dict[str, Any]) -> bool:
+    preferences = profile.get("preferences", {})
+    swimming = profile.get("swimming", {})
+    if swimming.get("active") is False:
+        return False
+    return bool(preferences.get("swim_days", []))
+
+
 def build_week(profile: dict[str, Any], start_date: date, targets: WeekTargets) -> dict[str, Any]:
     preferences = profile["preferences"]
     recovery_km, aerobic_km = allocate_run_distances(targets)
+    quality_run_day = preferences.get("quality_run_days", ["Tuesday"])[0]
+    easy_run_day = preferences.get("easy_run_days", ["Thursday"])[0]
+    preferred_swim_days = preferences.get("swim_days", [])
+    steady_swim_day = preferred_swim_days[-1] if preferred_swim_days else "Friday"
+    has_active_swim = swim_is_active(profile)
 
     if targets.phase == "race":
         sessions = [
             build_easy_run(
                 profile,
-                "Tuesday",
+                quality_run_day,
                 f"Week {targets.week_number} Marathon Pace Tune-Up",
                 aerobic_km,
             ),
@@ -951,11 +1041,10 @@ def build_week(profile: dict[str, Any], start_date: date, targets: WeekTargets) 
             ),
             build_easy_run(
                 profile,
-                "Thursday",
+                easy_run_day,
                 f"Week {targets.week_number} Easy Run",
                 5,
             ),
-            build_swim("Friday", f"Week {targets.week_number} Optional Swim", 1000, "Optional easy swim or full rest."),
             make_workout(
                 day="Saturday",
                 sport="run",
@@ -989,16 +1078,26 @@ def build_week(profile: dict[str, Any], start_date: date, targets: WeekTargets) 
                 tags=["race", "goal_event"],
             ),
         ]
+        if has_active_swim:
+            sessions.insert(
+                3,
+                build_swim(
+                    profile,
+                    targets,
+                    steady_swim_day,
+                    f"Week {targets.week_number} Optional Swim",
+                    "Optional easy swim or full rest.",
+                ),
+            )
     else:
         sessions = [
-            build_run_threshold(profile, targets),
+            build_run_threshold(profile, targets, quality_run_day),
             build_easy_run(
                 profile,
-                "Thursday",
+                easy_run_day,
                 f"Week {targets.week_number} Aerobic Run",
                 aerobic_km,
             ),
-            build_swim("Friday", f"Week {targets.week_number} Steady Swim", 2000, "2000 m continuous aerobic swim with light cadence focus."),
             build_bike(
                 profile,
                 preferences["long_ride_days"][0],
@@ -1009,8 +1108,19 @@ def build_week(profile: dict[str, Any], start_date: date, targets: WeekTargets) 
             ),
             build_long_run(profile, targets, preferences["long_run_days"][0]),
         ]
+        if has_active_swim:
+            sessions.insert(
+                2,
+                build_swim(
+                    profile,
+                    targets,
+                    steady_swim_day,
+                    f"Week {targets.week_number} Steady Swim",
+                    "Continuous aerobic swim with light cadence focus.",
+                ),
+            )
 
-        if has_brick_run(targets):
+        if has_brick_run(profile, targets):
             sessions.insert(
                 -1,
                 build_easy_run(
@@ -1020,13 +1130,14 @@ def build_week(profile: dict[str, Any], start_date: date, targets: WeekTargets) 
                     recovery_km,
                 ),
             )
-        elif should_swap_brick_for_swim(profile, targets):
+        elif has_active_swim and should_swap_brick_for_swim(profile, targets):
             sessions.insert(
                 -1,
                 build_swim(
+                    profile,
+                    targets,
                     "Saturday" if preferences["long_run_days"][0] == "Sunday" else "Sunday",
                     f"Week {targets.week_number} Optional Swim",
-                    1200,
                     "Optional swim instead of the short brick run to reduce impact load.",
                 ),
             )
@@ -1226,36 +1337,24 @@ def write_fit(workout: dict[str, Any], export_dir: Path) -> Path | None:
 
 def format_swim_workout_text(workout: dict[str, Any]) -> str:
     total_distance = sum(segment.get("distance_m", 0) for segment in workout["segments"])
+    pool_length_m = 25
     lines = [
         f"{workout['title']}",
         f"Date: {workout['date']}",
         "Sport: Swimming",
-        "Pool length: 25m",
+        f"Pool length: {pool_length_m}m",
         f"Total distance: {format_km_from_meters(total_distance)}",
         "",
     ]
 
-    lines.extend(
-        [
-            "Warmup",
-            f"- Warmup {format_km_from_meters(200)}",
-            "",
-            "4x",
-            f"- Drill {format_km_from_meters(50)}",
-            "- 20s intensity=rest",
-            "",
-            "4x",
-            f"- Kick {format_km_from_meters(50)}",
-            "- 20s intensity=rest",
-            "",
-            "4x",
-            f"- Pull {format_km_from_meters(50)}",
-            "- 20s intensity=rest",
-            "",
-            "Cooldown",
-            f"- Swim {format_km_from_meters(100)}",
-        ]
-    )
+    for segment in workout["segments"]:
+        description = segment["description"]
+        if "distance_m" in segment:
+            lines.append(f"- {description}: {format_km_from_meters(int(segment['distance_m']))}")
+        elif "duration_sec" in segment:
+            lines.append(f"- {description}: {format_duration(int(segment['duration_sec']))}")
+        else:
+            lines.append(f"- {description}")
 
     return "\n".join(lines) + "\n"
 
@@ -1401,7 +1500,9 @@ def export_plan(plan: dict[str, Any], profile: dict[str, Any]) -> dict[str, list
                 if fit_path is not None:
                     exported["fit"].append(str(fit_path))
             if "txt" in session["export_formats"] and session["sport"] == "swim":
-                exported["swim_text"].append(str(write_swim_text(session, week_export_dir(swim_dir, session))))
+                swim_path = write_swim_text(session, week_export_dir(swim_dir, session))
+                write_swim_text(session, week_export_dir(workout_dir, session))
+                exported["swim_text"].append(str(swim_path))
 
     return exported
 

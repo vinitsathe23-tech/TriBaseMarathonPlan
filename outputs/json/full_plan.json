@@ -1,0 +1,4640 @@
+{
+  "athlete": {
+    "name": "Vicky",
+    "date_of_birth": "1992-0-13",
+    "location": "Canberra, Australia"
+  },
+  "goal": {
+    "primary_focus": "full_marathon",
+    "secondary_focus": "maintain_triathlon_fitness",
+    "weeks_to_goal": 15
+  },
+  "plan_start_date": "2026-03-26",
+  "plan_end_date": "2026-07-08",
+  "weeks": [
+    {
+      "week_number": 1,
+      "phase": "build",
+      "start_date": "2026-03-26",
+      "end_date": "2026-04-01",
+      "run_weekly_target_km": 44,
+      "long_run_target_km": 16,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W01_Thu_run_bitch",
+          "description": "3 x 8 min at threshold. Primary quality session for the week.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 480,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 480,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 480,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-03-29",
+          "week_number": 1
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W01_Tue_too_easy_to_complain",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-03-27",
+          "week_number": 1
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W01_Wed_spin_to_win",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 4380,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-03-28",
+          "week_number": 1
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W01_Sat_wheels_of_destiny",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 7500,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-03-31",
+          "week_number": 1
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W01_Sun_lord_of_the_long_run",
+          "description": "16 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 16 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 6240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 16km"
+            }
+          ],
+          "date": "2026-04-01",
+          "week_number": 1
+        }
+      ]
+    },
+    {
+      "week_number": 2,
+      "phase": "build",
+      "start_date": "2026-04-02",
+      "end_date": "2026-04-08",
+      "run_weekly_target_km": 48,
+      "long_run_target_km": 18,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W02_Thu_your_mama_didnt_raise_a_quitter",
+          "description": "4 x 6 min cruise intervals at threshold with short float recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-04-05",
+          "week_number": 2
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W02_Tue_boring_do_it_anyway",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-04-03",
+          "week_number": 2
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W02_Wed_cadence_crusade",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 4560,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-04",
+          "week_number": 2
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W02_Sat_the_rolling_chronicle",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 7800,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-07",
+          "week_number": 2
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W02_Sun_endurance_odyssey",
+          "description": "18 km long run with 4 km at marathon pace.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 18 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 4680,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "12km easy aerobic running"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 1380,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "4km at marathon pace"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 780,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "2km easy cooldown running"
+            }
+          ],
+          "date": "2026-04-08",
+          "week_number": 2
+        }
+      ]
+    },
+    {
+      "week_number": 3,
+      "phase": "build",
+      "start_date": "2026-04-09",
+      "end_date": "2026-04-15",
+      "run_weekly_target_km": 52,
+      "long_run_target_km": 20,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W03_Thu_quit_crying_keep_moving",
+          "description": "4 x 10 min tempo at threshold with 3 min easy jog recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-04-12",
+          "week_number": 3
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W03_Tue_jog_you_drama_queen",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-04-10",
+          "week_number": 3
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W03_Wed_chain_gang_chill",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 4740,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-11",
+          "week_number": 3
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W03_Sat_saddle_saga",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 8100,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-14",
+          "week_number": 3
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W03_Sun_the_weekend_epic",
+          "description": "20 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 20 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 7800,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 20km"
+            }
+          ],
+          "date": "2026-04-15",
+          "week_number": 3
+        }
+      ]
+    },
+    {
+      "week_number": 4,
+      "phase": "recovery",
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-22",
+      "run_weekly_target_km": 44,
+      "long_run_target_km": 18,
+      "notes": [
+        "Recovery week to consolidate the previous block."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W04_Thu_nobody_cares_hit_pace",
+          "description": "2 x 15 min threshold blocks to build sustained aerobic power.",
+          "tags": [
+            "quality",
+            "threshold",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-04-19",
+          "week_number": 4
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W04_Tue_just_shut_up_and_shuffle",
+          "description": "12 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 12 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 4620,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 12km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-04-17",
+          "week_number": 4
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W04_Wed_pedal_powered_zen",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 3600,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-18",
+          "week_number": 4
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W04_Sat_the_great_spinabout",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 6300,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-21",
+          "week_number": 4
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W04_Sun_mileage_monarchy",
+          "description": "18 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "recovery"
+          ],
+          "notes": [
+            "Planned distance is 18 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 7020,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 18km"
+            }
+          ],
+          "date": "2026-04-22",
+          "week_number": 4
+        }
+      ]
+    },
+    {
+      "week_number": 5,
+      "phase": "build",
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-29",
+      "run_weekly_target_km": 48,
+      "long_run_target_km": 22,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W05_Thu_suffer_with_dignity",
+          "description": "3 x 10 min at threshold. Primary quality session for the week.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-04-26",
+          "week_number": 5
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W05_Tue_nobody_asked_keep_running",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-04-24",
+          "week_number": 5
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W05_Wed_rolling_meditation",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5100,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-25",
+          "week_number": 5
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W05_Sat_tour_de_vinit",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 8700,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-04-28",
+          "week_number": 5
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W05_Sun_the_sunday_saga",
+          "description": "22 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 22 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 8580,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 22km"
+            }
+          ],
+          "date": "2026-04-29",
+          "week_number": 5
+        }
+      ]
+    },
+    {
+      "week_number": 6,
+      "phase": "build",
+      "start_date": "2026-04-30",
+      "end_date": "2026-05-06",
+      "run_weekly_target_km": 52,
+      "long_run_target_km": 24,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W06_Thu_this_is_why_we_train",
+          "description": "4 x 6 min cruise intervals at threshold with short float recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-05-03",
+          "week_number": 6
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W06_Tue_this_is_the_easy_one",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-05-01",
+          "week_number": 6
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W06_Wed_crank_it_kindly",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5280,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-02",
+          "week_number": 6
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W06_Sat_miles_of_smiles_on_wheels",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 9000,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-05",
+          "week_number": 6
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W06_Sun_kingdom_of_kilometers",
+          "description": "24 km long run with 6 km at marathon pace.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 24 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 6240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "16km easy aerobic running"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 2040,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "6km at marathon pace"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 780,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "2km easy cooldown running"
+            }
+          ],
+          "date": "2026-05-06",
+          "week_number": 6
+        }
+      ]
+    },
+    {
+      "week_number": 7,
+      "phase": "build",
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-13",
+      "run_weekly_target_km": 56,
+      "long_run_target_km": 26,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W07_Thu_stop_negotiating",
+          "description": "4 x 10 min tempo at threshold with 3 min easy jog recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-05-10",
+          "week_number": 7
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W07_Tue_dont_make_it_a_whole_thing",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-05-08",
+          "week_number": 7
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W07_Wed_endurance_on_wheels",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5460,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-09",
+          "week_number": 7
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W07_Sat_the_epic_excursion",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 9300,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-12",
+          "week_number": 7
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W07_Sun_long_haul_legend",
+          "description": "26 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 26 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 10140,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 26km"
+            }
+          ],
+          "date": "2026-05-13",
+          "week_number": 7
+        }
+      ]
+    },
+    {
+      "week_number": 8,
+      "phase": "recovery",
+      "start_date": "2026-05-14",
+      "end_date": "2026-05-20",
+      "run_weekly_target_km": 48,
+      "long_run_target_km": 28,
+      "notes": [
+        "Recovery week to consolidate the previous block."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W08_Thu_cry_later_run_now",
+          "description": "2 x 15 min threshold blocks to build sustained aerobic power.",
+          "tags": [
+            "quality",
+            "threshold",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-05-17",
+          "week_number": 8
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W08_Tue_move_your_feet",
+          "description": "12 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 12 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 4620,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 12km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-05-15",
+          "week_number": 8
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W08_Wed_the_steady_spinner",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 3600,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-16",
+          "week_number": 8
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W08_Sat_saddle_up_supreme",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 6300,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-19",
+          "week_number": 8
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W08_Sun_epic_of_endurance",
+          "description": "28 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "recovery"
+          ],
+          "notes": [
+            "Planned distance is 28 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 10920,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 28km"
+            }
+          ],
+          "date": "2026-05-20",
+          "week_number": 8
+        }
+      ]
+    },
+    {
+      "week_number": 9,
+      "phase": "recovery",
+      "start_date": "2026-05-21",
+      "end_date": "2026-05-27",
+      "run_weekly_target_km": 40,
+      "long_run_target_km": 22,
+      "notes": [
+        "Recovery week to consolidate the previous block."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W09_Thu_run_bitch",
+          "description": "3 x 6 min at threshold. Primary quality session for the week.",
+          "tags": [
+            "quality",
+            "threshold",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-05-24",
+          "week_number": 9
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W09_Tue_too_easy_to_complain",
+          "description": "12 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 12 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 4620,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 12km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-05-22",
+          "week_number": 9
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W09_Wed_spin_to_win",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 3600,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-23",
+          "week_number": 9
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W09_Sat_wheels_of_destiny",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 6300,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-26",
+          "week_number": 9
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W09_Sun_lord_of_the_long_run",
+          "description": "22 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "recovery"
+          ],
+          "notes": [
+            "Planned distance is 22 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 8580,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 22km"
+            }
+          ],
+          "date": "2026-05-27",
+          "week_number": 9
+        }
+      ]
+    },
+    {
+      "week_number": 10,
+      "phase": "build",
+      "start_date": "2026-05-28",
+      "end_date": "2026-06-03",
+      "run_weekly_target_km": 44,
+      "long_run_target_km": 26,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W10_Thu_your_mama_didnt_raise_a_quitter",
+          "description": "4 x 6 min cruise intervals at threshold with short float recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-05-31",
+          "week_number": 10
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W10_Tue_boring_do_it_anyway",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-05-29",
+          "week_number": 10
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W10_Wed_cadence_crusade",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5700,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-05-30",
+          "week_number": 10
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W10_Sat_the_rolling_chronicle",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 10200,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-02",
+          "week_number": 10
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W10_Sun_endurance_odyssey",
+          "description": "26 km long run with 7 km at marathon pace.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 26 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 6600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "17km easy aerobic running"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 2400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "7km at marathon pace"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 780,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "2km easy cooldown running"
+            }
+          ],
+          "date": "2026-06-03",
+          "week_number": 10
+        }
+      ]
+    },
+    {
+      "week_number": 11,
+      "phase": "build",
+      "start_date": "2026-06-04",
+      "end_date": "2026-06-10",
+      "run_weekly_target_km": 48,
+      "long_run_target_km": 28,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W11_Thu_quit_crying_keep_moving",
+          "description": "4 x 10 min tempo at threshold with 3 min easy jog recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-06-07",
+          "week_number": 11
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W11_Tue_jog_you_drama_queen",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-06-05",
+          "week_number": 11
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W11_Wed_chain_gang_chill",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5700,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-06",
+          "week_number": 11
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W11_Sat_saddle_saga",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 10500,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-09",
+          "week_number": 11
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W11_Sun_the_weekend_epic",
+          "description": "28 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 28 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 10920,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 28km"
+            }
+          ],
+          "date": "2026-06-10",
+          "week_number": 11
+        }
+      ]
+    },
+    {
+      "week_number": 12,
+      "phase": "recovery",
+      "start_date": "2026-06-11",
+      "end_date": "2026-06-17",
+      "run_weekly_target_km": 40,
+      "long_run_target_km": 24,
+      "notes": [
+        "Recovery week to consolidate the previous block."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W12_Thu_nobody_cares_hit_pace",
+          "description": "2 x 15 min threshold blocks to build sustained aerobic power.",
+          "tags": [
+            "quality",
+            "threshold",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Long threshold block 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-06-14",
+          "week_number": 12
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W12_Tue_just_shut_up_and_shuffle",
+          "description": "12 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 12 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 4620,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 12km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-06-12",
+          "week_number": 12
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W12_Wed_pedal_powered_zen",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 3600,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-13",
+          "week_number": 12
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W12_Sat_the_great_spinabout",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "recovery"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 6300,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-16",
+          "week_number": 12
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W12_Sun_mileage_monarchy",
+          "description": "24 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "recovery"
+          ],
+          "notes": [
+            "Planned distance is 24 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 9360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 24km"
+            }
+          ],
+          "date": "2026-06-17",
+          "week_number": 12
+        }
+      ]
+    },
+    {
+      "week_number": 13,
+      "phase": "build",
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-24",
+      "run_weekly_target_km": 44,
+      "long_run_target_km": 32,
+      "notes": [
+        "Progressive load week focused on aerobic volume."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W13_Thu_suffer_with_dignity",
+          "description": "4 x 10 min at threshold. Primary quality session for the week.",
+          "tags": [
+            "quality",
+            "threshold",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Threshold repeat 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-06-21",
+          "week_number": 13
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W13_Tue_nobody_asked_keep_running",
+          "description": "14 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 14 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 5400,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 14km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-06-19",
+          "week_number": 13
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W13_Wed_rolling_meditation",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 5700,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-20",
+          "week_number": 13
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W13_Sat_tour_de_vinit",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "build"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 10800,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-23",
+          "week_number": 13
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W13_Sun_the_sunday_saga",
+          "description": "32 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "build"
+          ],
+          "notes": [
+            "Planned distance is 32 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 12480,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 32km"
+            }
+          ],
+          "date": "2026-06-24",
+          "week_number": 13
+        }
+      ]
+    },
+    {
+      "week_number": 14,
+      "phase": "taper",
+      "start_date": "2026-06-25",
+      "end_date": "2026-07-01",
+      "run_weekly_target_km": 34,
+      "long_run_target_km": 24,
+      "notes": [
+        "Taper week with reduced volume and retained sharpness."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W14_Thu_this_is_why_we_train",
+          "description": "4 x 6 min cruise intervals at threshold with short float recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "taper"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 120,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog float recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 360,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Cruise interval 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-06-28",
+          "week_number": 14
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W14_Tue_this_is_the_easy_one",
+          "description": "10 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 10 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 3840,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 10km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-06-26",
+          "week_number": 14
+        },
+        {
+          "day": "Wednesday",
+          "sport": "bike",
+          "title": "W14_Wed_crank_it_kindly",
+          "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "endurance",
+            "taper"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 3000,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Steady aerobic ride with smooth cadence and easy fueling practice. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-27",
+          "week_number": 14
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W14_Sat_miles_of_smiles_on_wheels",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "taper"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 4500,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-06-30",
+          "week_number": 14
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W14_Sun_kingdom_of_kilometers",
+          "description": "24 km long run with 6 km at marathon pace.",
+          "tags": [
+            "long_run",
+            "taper"
+          ],
+          "notes": [
+            "Planned distance is 24 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 6240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "16km easy aerobic running"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 2040,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "6km at marathon pace"
+            },
+            {
+              "type": "steady",
+              "duration_sec": 780,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "2km easy cooldown running"
+            }
+          ],
+          "date": "2026-07-01",
+          "week_number": 14
+        }
+      ]
+    },
+    {
+      "week_number": 15,
+      "phase": "taper",
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-08",
+      "run_weekly_target_km": 26,
+      "long_run_target_km": 16,
+      "notes": [
+        "Taper week with reduced volume and retained sharpness."
+      ],
+      "sessions": [
+        {
+          "day": "Thursday",
+          "sport": "run",
+          "title": "W15_Thu_stop_negotiating",
+          "description": "4 x 10 min tempo at threshold with 3 min easy jog recoveries.",
+          "tags": [
+            "quality",
+            "threshold",
+            "taper"
+          ],
+          "notes": [],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "warmup",
+              "duration_sec": 900,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog warm-up in Z2"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 1 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 2 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 3 at 5.15-5.05 /km"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 180,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy jog recovery"
+            },
+            {
+              "type": "work",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 173,
+                "high": 185
+              },
+              "description": "Tempo repeat 4 at 5.15-5.05 /km"
+            },
+            {
+              "type": "cooldown",
+              "duration_sec": 600,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Easy cool-down jog"
+            }
+          ],
+          "date": "2026-07-05",
+          "week_number": 15
+        },
+        {
+          "day": "Tuesday",
+          "sport": "run",
+          "title": "W15_Tue_dont_make_it_a_whole_thing",
+          "description": "10 km relaxed aerobic running in Z2. Finish with 4 x 20 sec strides.",
+          "tags": [
+            "easy",
+            "aerobic"
+          ],
+          "notes": [
+            "Planned distance is 10 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this run.",
+            "Finish with 4 x 20 sec strides with 40 sec easy recovery."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 3840,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Steady aerobic running 10km"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 1 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 2 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 3 of 4"
+            },
+            {
+              "type": "recovery",
+              "duration_sec": 40,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Walk or easy jog recovery"
+            },
+            {
+              "type": "stride",
+              "duration_sec": 20,
+              "target": {
+                "metric": "heart_rate",
+                "low": 160,
+                "high": 172
+              },
+              "description": "Stride 4 of 4"
+            }
+          ],
+          "date": "2026-07-03",
+          "week_number": 15
+        },
+        {
+          "day": "Saturday",
+          "sport": "bike",
+          "title": "W15_Sat_the_epic_excursion",
+          "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride easy and aerobic for base building.",
+          "tags": [
+            "bike",
+            "long_ride",
+            "taper"
+          ],
+          "notes": [],
+          "export_formats": [
+            "zwo",
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "freeride",
+              "duration_sec": 2700,
+              "target": {
+                "metric": "power_zone",
+                "zone": "z2",
+                "low": 0.56,
+                "high": 0.74
+              },
+              "description": "Long aerobic ride. Stay comfortable, smooth, and controlled throughout. Keep the whole ride aerobic for base building."
+            }
+          ],
+          "date": "2026-07-07",
+          "week_number": 15
+        },
+        {
+          "day": "Sunday",
+          "sport": "run",
+          "title": "W15_Sun_long_haul_legend",
+          "description": "16 km easy-long run. Keep it mostly aerobic and controlled.",
+          "tags": [
+            "long_run",
+            "taper"
+          ],
+          "notes": [
+            "Planned distance is 16 km.",
+            "FIT export currently uses estimated duration rather than a distance target for this long run."
+          ],
+          "export_formats": [
+            "fit"
+          ],
+          "segments": [
+            {
+              "type": "steady",
+              "duration_sec": 6240,
+              "target": {
+                "metric": "heart_rate",
+                "low": 145,
+                "high": 160
+              },
+              "description": "Long aerobic run 16km"
+            }
+          ],
+          "date": "2026-07-08",
+          "week_number": 15
+        }
+      ]
+    }
+  ]
+}
